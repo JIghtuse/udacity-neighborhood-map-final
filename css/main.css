@@ -3,11 +3,12 @@ h1 {
 }
 
 #map {
-    height: 400px;
+    height: 80%;
     width: 100%;
 }
 
-#container {
-    max-width: 80em;
-    margin: 0 auto;
+html, body, #container {
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }
