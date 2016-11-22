@@ -11,6 +11,8 @@ nav {
     position: absolute;
     transform: translate(-200px, 0);
     transition: transform 0.3s ease;
+    z-index: 2;
+    background-color:white;
 }
 
 nav.open {
@@ -44,6 +46,7 @@ a:hover {
 
 @media screen and (min-width: 600px) {
     nav {
+        position: relative;
         width: 200px;
         transform: translate(0, 0);
     }
