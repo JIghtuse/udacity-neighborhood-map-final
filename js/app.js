@@ -1,10 +1,6 @@
-var labels = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
-var labelIndex = 0;
-
 function addMarker(location, map, label) {
     var marker = new google.maps.Marker({
         position: location,
-        label: label,
         map: map
     });
 }
@@ -26,6 +22,6 @@ function initMap() {
     ];
 
     locations.forEach(function(location) {
-        addMarker(location, map, labels[labelIndex++ % labels.length]);
+        addMarker(location, map);
     });
 }
