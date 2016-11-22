@@ -1,4 +1,13 @@
+h1 {
+    text-align: center;
+}
+
 #map {
     height: 400px;
     width: 100%;
+}
+
+#container {
+    max-width: 80em;
+    margin: 0 auto;
 }
