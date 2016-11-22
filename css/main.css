@@ -1,5 +1,61 @@
-html, body, #map {
+html, body, #container, #map {
     height: 100%;
+    width: 100%;
     margin: 0;
     padding: 0;
+}
+
+nav {
+    width: 200px;
+    height: 100%;
+    position: absolute;
+    transform: translate(-200px, 0);
+    transition: transform 0.3s ease;
+}
+
+nav.open {
+    background-color: white;
+    z-index: 2;
+    transform: translate(0, 0);
+}
+
+a {
+    text-decoration: none;
+    color: #232323;
+}
+
+a:hover {
+    color: tomato;
+}
+
+.location-item {
+    padding: 20px 10px;
+    font-size: 20px;
+}
+
+#location-items {
+    list-style-type: none;
+    padding: 20px;
+}
+
+#menuToggle {
+    font-size: 30px;
+}
+
+@media screen and (min-width: 600px) {
+    nav {
+        width: 200px;
+        transform: translate(0, 0);
+    }
+    body {
+        display: flex;
+        flex-flow: row nowrap;
+    }
+    main {
+        width: auto;
+        flex-grow: 1;
+    }
+    #menuToggle {
+        display: none;
+    }
 }

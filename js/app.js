@@ -1,3 +1,16 @@
+var menuToggle = document.querySelector('#menuToggle');
+var mapContainer = document.querySelector('#map');
+var drawer = document.querySelector('#drawer');
+
+menuToggle.addEventListener('click', function(e) {
+    drawer.classList.toggle('open');
+    e.stopPropagation();
+});
+
+mapContainer.addEventListener('click', function() {
+    drawer.classList.remove('open');
+});
+
 function addMarker(pos, map) {
     var marker = new google.maps.Marker({
         position: pos,
