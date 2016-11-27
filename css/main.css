@@ -16,7 +16,7 @@ nav {
     width: 200px;
     height: calc(100% - 35px);
     position: absolute;
-    transform: translate(-200px, 0);
+    transform: translate(-200px, 35px);
     transition: transform 0.3s ease;
     z-index: 2;
     background-color:white;
