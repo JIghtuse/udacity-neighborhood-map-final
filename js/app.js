@@ -42,6 +42,13 @@ function ViewModel() {
     self.locations.forEach(function(location) {
         addMarker(location.position, self.map);
     });
+
+    self.locationFilter = ko.observable("");
+
+    self.matchesFilter = function(name) {
+        var filterValue = self.locationFilter().toLowerCase();
+        return !filterValue || name.toLowerCase().includes(filterValue);
+    };
 }
 
 ko.applyBindings(new ViewModel());

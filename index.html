@@ -8,10 +8,10 @@
 <body>
     <nav role="navigation" id="drawer">
         <div id="search-container">
-            &#128269<input type="text" name="location-filter" id="location-filter">
+            &#128269<input type="text" data-bind="value: locationFilter" name="location-filter" id="location-filter">
         </div>
         <ul data-bind="foreach: locations" id="location-items">
-            <li class="location-item">
+            <li class="location-item" data-bind="visible: $root.matchesFilter(name)">
                 <a href="#" data-bind="text: name" class="location-link"></a>
             </li>
         </ul>
