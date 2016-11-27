@@ -13,10 +13,10 @@ html, body, #container {
 }
 
 nav {
-    width: 200px;
+    width: 250px;
     height: calc(100% - 35px);
     position: absolute;
-    transform: translate(-200px, 35px);
+    transform: translate(-250px, 35px);
     transition: transform 0.3s ease;
     z-index: 2;
     background-color:white;
@@ -47,6 +47,20 @@ a:hover {
     padding: 20px;
 }
 
+#search-container {
+    font-size: 20px;
+    border: 0;
+}
+
+#location-filter {
+    font-size: 20px;
+    border: solid 1px;
+    border-radius: 1em;
+    margin-top: 15px;
+    padding: 0 1em;
+    width: calc(100% - 3.2em);
+}
+
 #menuToggle {
     font-size: 30px;
 }
@@ -54,7 +68,7 @@ a:hover {
 @media screen and (min-width: 600px) {
     nav {
         position: relative;
-        width: 200px;
+        width: 250px;
         transform: translate(0, 0);
     }
     body {
